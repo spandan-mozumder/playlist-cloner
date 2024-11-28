@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Login = () => {
-  const CLIENT_ID = 'bcf9642bf3d44243801c3b523896e659';
+  const CLIENT_ID = 'a2c209e2781547d38984ca78f4516579';
   const REDIRECT_URI = 'http://localhost:5173/callback';
   const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
   const RESPONSE_TYPE = 'token';

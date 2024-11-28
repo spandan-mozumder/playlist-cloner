@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {signUpUser} from "../services/firebaseconfig";
+import { signUpUser } from "../services/firebaseconfig";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -15,7 +15,7 @@ const SignUp = () => {
     <div>
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
-      <div>
+        <div>
           <label htmlFor="email">Name:</label>
           <input
             type="name"
