@@ -8,12 +8,13 @@ import {
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDpfZAM_LJ84FoOLUmWPxKNoGBWGDekoco",
-  authDomain: "playlistcloner-7c290.firebaseapp.com",
-  projectId: "playlistcloner-7c290",
-  storageBucket: "playlistcloner-7c290.appspot.com",
-  messagingSenderId: "450564134397",
-  appId: "1:450564134397:web:bb71e0b36ddde34eb6b594",
+  apiKey: "AIzaSyAkK3ffzhy8yeCNySL3KL5FeQYRkfso2Js",
+  authDomain: "clonist-2a046.firebaseapp.com",
+  projectId: "clonist-2a046",
+  storageBucket: "clonist-2a046.firebasestorage.app",
+  messagingSenderId: "558509475982",
+  appId: "1:558509475982:web:ec647c87c8a17364fda1df",
+  measurementId: "G-EX9L5YCWRF"
 };
 
 const app = initializeApp(firebaseConfig);
