@@ -13,7 +13,6 @@ const Callback = () => {
     const token = new URLSearchParams(hash.replace("#", "?")).get("access_token");
 
     if (token) {
-      // Listen for auth state changes
       const unsubscribe = onAuthStateChanged(auth, async (user) => {
         if (user) {
           const userRef = doc(db, "users", user.uid);

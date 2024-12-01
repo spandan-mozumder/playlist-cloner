@@ -9,16 +9,13 @@ const Dashboard = () => {
   const [user, setUser] = useState(null); // Track user authentication state
 
   useEffect(() => {
-    // Set up the listener for auth state changes
     const unsubscribe = auth.onAuthStateChanged((authenticatedUser) => {
       if (authenticatedUser) {
-        setUser(authenticatedUser); // Set user when authenticated
+        setUser(authenticatedUser);
       } else {
-        setUser(null); // Reset user if not authenticated
+        setUser(null);
       }
     });
-
-    // Clean up the listener when the component is unmounted
     return () => unsubscribe();
   }, []);
 
@@ -51,7 +48,7 @@ const Dashboard = () => {
     if (user) {
       fetchSpotifyToken();
     }
-  }, [user]); // Trigger this when user is set
+  }, [user]);
 
   useEffect(() => {
     const fetchPlaylists = async () => {
